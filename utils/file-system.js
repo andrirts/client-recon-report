@@ -1,6 +1,7 @@
-import fs from "fs";
+// import fs from "fs";
+const fs = require("fs");
 
-export const unlinkFile = (filePath) => {
+const unlinkFile = (filePath) => {
   if (Array.isArray(filePath)) {
     return Promise.all(
       filePath.map(
@@ -29,3 +30,5 @@ export const unlinkFile = (filePath) => {
     });
   }
 };
+
+module.exports = { unlinkFile };
