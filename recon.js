@@ -148,7 +148,7 @@ const getSummaryData = async () => {
 //   );
 // })();
 
-cron.schedule("0 9 * * *", async () => {
+cron.schedule("0 10 * * *", async () => {
   console.log("Script run at " + moment().format("YYYY-MM-DD HH:mm:ss"));
   const data = await getSummaryData();
   const SAT = "PT SATRIA ABADI TERPADU";
