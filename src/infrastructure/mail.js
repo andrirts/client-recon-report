@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = (subject, text, attachments) => ({
   from: process.env.EMAIL,
-  to: ["ops@rts.id"],
+  to: ["andri@rts.id"],
   subject,
   text,
   attachments,
